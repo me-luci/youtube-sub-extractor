@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
+    "start" :"server.js",
+    "postinstall": "curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o yt-dlp && chmod +x yt-dlp",
+    "dev" : "nodemon server.js",
+    
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,3 +18,4 @@
     "express": "^4.21.1"
   }
 }
+
